@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+/* color variables */
+:root {
+  --clr-primary: #d50000;
+  --clr-primary-hover: #29e6a7;
+  --clr-primary-dark: #039d69;
+  --clr-gray100: #f9fbff;
+  --clr-gray150: #f4f6fb;
+  --clr-gray200: #eef1f6;
+  --clr-gray300: #e1e5ee;
+  --clr-gray400: #767b91;
+  --clr-gray500: #4f546c;
+  --clr-gray600: #2a324b;
+  --clr-gray700: #161d34;
+}
+
+/* border radius */
+:root {
+  --radius: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    /* flex-direction: column; */
+  font-family: Oxygen, sans-serif;
+  margin: 2rem;
+}
+
+.wrapper {
+    display: grid;
+    /* display: flex; */
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem; 
+    }
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 20px var(--clr-gray300);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 200ms ease-in;
+  font-family: Oxygen, sans-serif;
+  margin: 24rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.card__image {
+  height: 100%;
+  /* flex-direction: column; */
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 0.1rem;
+}
+
+.card__address {
+  padding: 0 1rem;
+  color: #6378bd;
+}
+
+.card__availability {
+  padding: 0 1rem;
+}
+
+.card__btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid var(--clr-primary);
+  background: transparent;
+  color: var(--clr-primary);
+  border-radius: var(--radius);
+  transition: background 200ms ease-in, color 200ms ease-in;
+  align-self: last baseline;
+}
+
+.saved {
+  padding: 1rem;
+  margin: 1rem;
+  align-self: last baseline;
+  color:#767b91;
+}
+
+
+
+.card__btn {
+  background: var(--clr-primary);
+  color: white;
+}
+
+
+.card__description {
+  padding: 0 1rem;
+  white-space: pre-line;
+  text-align: left;
+}
+
+.remove_margin_bottom {
+  margin-bottom: 0;
+}
+
+.add_margin_bottom {
+  margin-bottom: 0.5rem;
+}

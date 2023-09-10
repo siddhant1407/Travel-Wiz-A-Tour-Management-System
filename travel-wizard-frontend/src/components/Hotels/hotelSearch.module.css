@@ -1,0 +1,98 @@
+.hotel_bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url("hotel_1.jpg");
+  }
+
+  20% {
+    background-image: url("hotel_2.jpg");
+  }
+
+  40% {
+    background-image: url("hotel_3.jpg");
+  }
+
+  60% {
+    background-image: url("hotel_4.jpg");
+  }
+
+  80% {
+    background-image: url("hotel_5.jpg");
+  }
+
+  100% {
+    background-image: url("hotel_1.jpg");
+  }
+}
+
+
+.hotel_booking_container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  padding-top: 2rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel_booking_container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hotel_booking_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hotel_booking_container label {
+  font-weight: bold;
+}
+
+.hotel_booking_container input[type='text'],
+.hotel_booking_container input[type='date'],
+.hotel_booking_container input[type='number'] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.hotel_booking_container .guests-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.hotel_booking_container .guests-container label {
+  flex-basis: 50%;
+}
+
+.hotel_booking_container .guests-container input[type='number'] {
+  flex-basis: 50%;
+}
+
+.hotel_booking_container button[type='submit'] {
+  padding: 10px;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hotel_booking_container button[type='submit']:hover {
+  background-color: #0066cc;
+}

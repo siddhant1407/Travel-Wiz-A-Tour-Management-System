@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="post">
+          <div class="container">
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="uname"><b>username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            
+            <label for="uname"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="fn" required>
+
+            <label for="uname"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Username" name="ln" required>
+
+            <label for="uname"><b>Mobile</b></label>
+            <input type="text" placeholder="Enter Mobile" name="mobile" >
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.flight_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url("flight_1.jpg");
+  }
+
+  20% {
+    background-image: url("flight_2.jpg");
+  }
+
+  40% {
+    background-image: url("flight_3.jpg");
+  }
+
+  60% {
+    background-image: url("flight_4.jpg");
+  }
+
+  80% {
+    background-image: url("flight_5.jpg");
+  }
+
+  100% {
+    background-image: url("flight_1.jpg");
+  }
+}
+
+.flight_search_container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flight_search_container h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flight_search_container form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.flight_search_container label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.flight_search_container input[type="text"],
+.flight_search_container input[type="date"],
+.flight_search_container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.flight_search_container input[type="submit"] {
+  background-color: #0077FF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.flight_search_container input[type="submit"]:hover {
+  background-color: #0056b3;
+}
